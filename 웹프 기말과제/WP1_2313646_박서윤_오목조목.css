@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+
+body {
+    font-size: 50px;
+    font-family: "East Sea Dokdo", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    background-image: url(2313646_한옥배경.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px -4px 22px rgb(255, 255, 255);
+}
+
+h3, p {
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0px 8px rgb(0, 0, 0);
+}
+
+#instructionText {
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0px 8px rgb(255, 255, 255);
+}
+
+.player-setup {
+    background-image: url("https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTEyMTdfMjI1%2FMDAxNTc2NTUyMzY0Mjgz.Khf90Zq8H67LBN_EoeIx6uLW27I16DtXW8dsBn2xuiEg.Ugmp5DUQP83FeSF2P-WvaoAg8nq0skp7AuphiiV5JuUg.JPEG.swimmy0418%2F%25C7%25D1%25C1%25F6.jpg&type=sc960_832");
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.input-group {
+    margin: 15px 0;
+}
+
+.input-group label {
+    font-size: 40px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-bottom: 15px;
+}
+
+.input-group input:focus {
+    border-color: #4caf99;
+    box-shadow: 0 0px 3px #4caf99;
+}
+
+button {
+    font-size: 35px;
+    font-family: "East Sea Dokdo", sans-serif;
+    font-weight: normal;
+    background-color: #4caf99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: #429785;
+}
+
+.board {
+    width: 570px;
+    height: 570px;
+    display: grid;
+    grid-template-columns: repeat(19, 30px);
+    grid-template-rows: repeat(19, 30px);
+    justify-content: center;
+    margin: 20px auto;
+    padding: 22px;
+    background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20140225_161%2Frhdwnty_13933137796384kLHU_JPEG%2F%25B3%25AA%25B9%25AB2.jpg&type=sc960_832');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 0;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(244, 208, 63, 0);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.cell .stone {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.cell .stone.black {
+    background-color: black;
+    border: 1px solid #000;
+}
+
+.cell .stone.white {
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+#playerList {
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 40px;
+    text-align: left;
+    background-image: url("https://i.pinimg.com/736x/9d/40/c3/9d40c3c8a33bb352e7bb5714f462b757.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#playerList ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: player-counter;
+}
+
+#playerList li {
+    counter-increment: player-counter;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+#playerList li::before {
+    content: counter(player-counter) ".";
+    margin: 8px;
+    margin-left: 17px;
+    margin-right: 17px;
+    font-weight: bold;
+    color: #4caf99;
+}
+
+#playerList li span {
+    flex-grow: 1;
+    white-space: nowrap;
+}
