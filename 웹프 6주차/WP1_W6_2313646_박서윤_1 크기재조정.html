@@ -1,0 +1,414 @@
+<html lang="ko">
+<head>
+    <style>
+        .navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px; /* 기존의 절반 */
+            position: fixed;
+            z-index: 1;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+        }
+        .menu {
+            background-color: rgba(125, 160, 189, 0.605);
+            width: 225px; /* 기존의 절반 */
+            height: 35px; /* 기존의 절반 */
+            margin: 7.5px; /* 기존의 절반 */
+            text-align: center;
+            border-radius: 15px; /* 기존의 절반 */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 16.5px; /* 기존의 절반 */
+            color: rgb(255, 255, 255);
+            text-shadow: 1.5px 0px 7.5px rgb(0, 0, 0);
+        }
+        .menu:hover {
+            transform: scale(1.05);
+            background-color: rgb(135, 209, 255);
+        } 
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 1000px; /* 기존의 절반 */
+            height: 1200px; /* 기존의 절반 */
+        }
+        .box {
+            background-color: rgb(255, 255, 255);
+            width: 260px; /* 기존의 절반 */
+            height: 500px; /* 기존의 절반 */
+            margin: 25px; /* 기존의 절반 */
+            text-align: center;
+            border-radius: 25px; /* 기존의 절반 */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .box:hover {
+            transform: scale(1.05);
+            background-color: rgb(228, 241, 255);
+        } 
+
+        .song_name {
+            font-size: 25px; /* 기존의 절반 */
+            font-weight: 700;
+            color: rgb(70, 66, 157);
+            line-height: 25px; /* 기존의 절반 */
+            margin: 5px; /* 기존의 절반 */
+        }
+        .singer_name {
+            font-size: 15px; /* 기존의 절반 */
+            font-weight: 700;
+            color: rgb(45, 25, 92);
+        }
+        .image_box {
+            width: 200px; /* 기존의 절반 */
+            height: 200px; /* 기존의 절반 */
+        }
+        .image, .lyrics { width: 100%; height: 100%; }
+
+        .lyrics_box {
+            width: 240px; /* 기존의 절반 */
+            height: 200px; /* 기존의 절반 */
+            font-size: 10px; /* 기존의 절반 */
+            text-align: center;
+            overflow-y: scroll;
+        }
+
+        #contain { object-fit: contain; }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 150vh; /* 기존의 절반 */
+            margin: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image : url("2313646_background.png");
+        }
+    </style>
+</head>
+    <body>
+        <div class="navigation">
+            <div class="menu menu1">My Fav Places</div>
+            <div class="menu menu2">My Fav Singers</div>
+            <div class="menu menu3">My Fav Cartoons</div>
+            <div class="menu menu4">My Fav Colours</div>
+            <div class="menu menu5">My Fav Brands</div>
+        </div>
+        <div style="text-align: center; font-size: 45px; color: aliceblue; font-weight: bolder; margin-top: 100px;">My Favorite Songs These Days</div>
+        <div class="container">
+            <div class="box box1">
+                <div class="song_name">There Will Be Blood</div>
+                <div class="singer_name">Kim Petras</div>
+                <div class="image_box">
+                    <img class="image" id="contain" src="2313646_There Will Be Blood.jpg">
+                </div>
+                <div class="lyrics_box">
+                    <div class="lyrics"> 
+                    <pre style="font-family: sans-serif;">
+There will be blood, run for your life
+Go on and say, go on and say your last goodbye
+There will be blood, you're gonna die
+You'll never make it, never make it through the night
+There will be blood
+There will be blood
+There will be blood
+There will be blood (blood) (There will be-)
+In the club, I can't save you now
+Ain't nobody can hear you shout
+When I'm pulling you underground (there will be-)
+Take a sip from the Devil's cup
+Just a taste, you won't get enough
+Seal your fate when you swallow up (there will be-)
+Don't let me in, I'ma ruin your life
+I'm straight psychotic (there will be-)
+This is gonna be a hell of a night
+I know you want it
+There will be blood, run for your life
+Go on and say, go on and say your last goodbye
+There will be blood, you're gonna die
+You'll never make it, never make it through the night
+There will be blood
+There will be blood
+There will be blood (blood)
+There will be blood (there will be blood) (There will be—)
+When you're begging and on your knees
+That's when I get a sweet release
+You can't run from your destiny (there will be-)
+I've been dying to feel alive
+And your pain is my paradise
+So tonight, you gon' pay the price (there will be-)
+Don't let me in, I'ma ruin your life
+I'm straight psychotic (there will be-)
+This is gonna be a hell of a night
+I know you want it
+There will be blood, run for your life
+Go on and say, go on and say your last goodbye
+There will be blood, you're gonna die (you're gonna die)
+You'll never make it, never make it through the night
+There will be blood (there will be blood)
+There will be blood (there will be blood)
+There will be blood
+There will be blood (blood, blood) (There will be—)
+                    </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="box box2">
+                <div class="song_name">Daydream</div>
+                <div class="singer_name">몬스타엑스(Monsta X)</div>
+                <div class="image_box">
+                    <img class="image" id="contain" src="2313646_Daydream.jpg">
+                </div>
+                <div class="lyrics_box">
+                    <div class="lyrics"> 
+                    <pre style="font-family: sans-serif;">
+달을 삼킨 밤, 빛 하나 없는 방
+Dear my love good night
+허공에 건넨 말
+I just wanna hear, 그리운 목소리
+답은 영원히 들을 수 없겠지
+Hope it's unreal
+모두가 수군거려 니가 날 떠나고서
+'쟤 진짜 미쳤어' (blah blah blah blah)
+괜찮아 뭐라든지 어쩌면 그 말들이
+진짜일지도 모르지 (lie lie lie lie)
+Ooh 너의 흔적들을 따라서
+Came to here like A to Z
+두 눈을 살짝 감고서
+One, two, three (shh)
+Go to sleep
+불을 켜는 달, 선명해지는 sight
+Kiss you say good night
+날 떠나가지 마
+I don't wanna wake, 다 지옥일 테니
+You just be with me
+이대로 영원히
+In my daydream
+(Oh) 꿈을 꿔 매일 꿈을 꿔 매일 물어봐
+(Oh) 너는 날 왜 너는 날 왜 떠났나
+(Oh) 꿈에서 매일 꿈에서 매일
+Kiss you say good night
+날 떠나가지 마
+위대한 개츠비
+어쩌면 fantasy 아니면 lunatic
+No I don't need penalty (oh)
+뭘 해도 닿을 수 없다면
+우연도 운명도 만들어
+재밌어 사랑이라는 건 (oh)
+Ooh 넌 왜 자꾸만 사라져
+Rewind back like Z to A
+두 눈을 감고 되돌려
+One, two, three (shh)
+Go to dream
+불을 켜는 달, 선명해지는 sight
+Kiss you say good night
+날 떠나가지 마
+I don't wanna wake, 다 지옥일 테니
+You just be with me
+이대로 영원히
+In my daydream
+(Oh) 꿈을 꿔 매일 꿈을 꿔 매일 물어봐
+(Oh) 너는 날 왜 너는 날 왜 떠났나
+(Oh) 꿈에서 매일 꿈에서 매일
+Kiss you say good night
+날 떠나가지 마
+                    </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="box box3">
+                <div class="song_name">Magnetic</div>
+                <div class="singer_name">아일릿(ILLIT)</div>
+                <div class="image_box">
+                    <img class="image" id="contain" src="2313646_Magnetic.jpg">
+                </div>
+                <div class="lyrics_box">
+                    <div class="lyrics"> 
+                    <pre style="font-family: sans-serif;">
+Baby
+I'm just trying to play it cool
+But I just can't hide that
+I want you
+Wait a minute 이게 뭐지?
+내 심장이 lub-dub
+자꾸만 뛰어
+저 멀리서도 oh my gosh!
+끌어당겨 you're my crush!
+초능력처럼
+거대한 자석이 된 것만 같아 my heart
+네 모든 게 내 맘에 달라붙어버려 boy
+We're magnetized 인정할게
+This time I want
+You You You You like it's magnetic
+U U U U U U U U super 이끌림
+You You You You like it's magnetic
+U U U U U U U U super 이끌림
+BAE BAE BAE BAE BAE BAE BAE BAE BAE
+Dash-da-da Dash-da-da Dash-da
+Like it's magnetic
+BAE BAE BAE BAE BAE BAE BAE BAE BAE
+Dash-da-da Dash-da-da
+Baby don't say no
+정반대 같아 our type
+넌 J 난 완전 P
+S와 N 극이지만
+그래서 끌리지
+내가 만들래 green light
+여잔 배짱이지
+So let's go let's go
+Let's go let's go
+숨기고 싶지 않아 자석 같은 my heart
+내 맘의 끌림대로 너를 향해 갈게 boy
+We're magnetized 인정할게
+This time I want
+You You You You like it's magnetic
+U U U U U U U U super 이끌림
+You You You You like it's magnetic
+U U U U U U U U super 이끌림
+No push and pull
+전속력으로 너에게 갈게
+(In a rush in a rush)
+Our chemistry
+난 과몰입해 지금 순간에
+(Baby you're my crush you're my crush)
+No push and pull
+네게 집중 후회는 안 할래
+(Gonna dash gonna dash)
+Never holding back
+직진해 yeah
+This time I want
+You You You You like it's magnetic
+U U U U U U U U super 이끌림
+You You You You like it's magnetic
+U U U U U U U U super 이끌림
+BAE BAE BAE BAE BAE BAE BAE BAE BAE
+Dash-da-da Dash-da-da Dash-da
+Like it's magnetic
+BAE BAE BAE BAE BAE BAE BAE BAE BAE
+Dash-da-da Dash-da-da
+Baby don't say no
+                    </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="box box4">
+                <div class="song_name">Drowning</div>
+                <div class="singer_name">WOODZ</div>
+                <div class="image_box">
+                    <img class="image" id="contain" src="2313646_Drowning.jpg">
+                </div>
+                <div class="lyrics_box">
+                    <div class="lyrics"> 
+                    <pre style="font-family: sans-serif;">
+미치도록 사랑했던
+지겹도록 다투었던
+네가 먼저 떠나고
+여긴 온종일 비가 왔어
+금세 턱 끝까지 차올랐고
+숨이 막혀와
+내 맘이란 추는 나를 더 깊게 더 깊게 붙잡아
+Oh I'm drowning
+It's raining all day
+I can't breath
+Oh oh I'm drowning
+Oh I'm drowning
+Oh I'm drowning
+Oh I'm drowning
+You're taking my life from me
+다 알면서 눈 감은 넌 왜
+다정한 말로 나를 죽여놓고
+날 누이고 너는 떠나갔지
+You cut me bad, I'm still waiting for you
+너 떠나고 이곳은 잠겨 눈물로
+날 너무 사랑했던 넌
+어디로 흩어졌는지
+내 맘이란 추는 나를 더 깊게 더 깊게 붙잡아
+Oh I'm drowning
+It's raining all day
+I can't breath
+Oh oh I'm drowning
+Oh I'm drowning
+Oh I'm drowning
+Oh I'm drowning
+You're taking my life from me
+더 깊이 빠져 죽어도 되니까
+다시 한번만 돌아와 줄래
+더 깊이 빠져 죽어도 되니까
+다시 한번만
+Oh I'm drowning
+It's raining all day
+I can't breath
+Oh oh I'm drowning
+Oh I'm drowning
+Oh I'm drowning
+Oh I'm drowning
+You're taking my life from me
+                    </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="box box5">
+                <div class="song_name">Good Ones</div>
+                <div class="singer_name">Charli xcx</div>
+                <div class="image_box">
+                    <img class="image" id="contain" src="2313646_Good Ones.jpg">
+                </div>
+                <div class="lyrics_box">
+                    <div class="lyrics"> 
+                    <pre style="font-family: sans-serif;">
+I wish you gave me
+A reason
+That you were better
+At leaving
+That you got your kicks from seeing me low
+I always let the good ones go
+Don't want the kisses
+Unless they're bitter
+I'm hooked on touches
+That leave me weaker
+I swear that I love nothing more than broke
+I always let the good ones go
+And baby you couldn't have loved me any better
+But doing this is all that I've known ever
+I want the bad ones coz they're all I know
+I always let the good ones go
+I always let the good ones go
+I always let the good ones go
+I always let the good ones go
+Let you down easy
+I'm trying
+You're everything I spent my whole life fighting
+So when I walk away it's not your fault
+I always let the good ones go
+And baby you couldn't have loved me any better
+But doing this is all that I've known ever
+I want the bad ones coz they're all I know
+I always let the good ones go
+I always let the good ones go
+I always let the good ones go
+I always let the good ones go
+And baby you couldn't have loved me any better better better
+I always let the good ones go
+But doing this is all that I've known ever ever ever
+I always let the good ones go
+                    </pre>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
